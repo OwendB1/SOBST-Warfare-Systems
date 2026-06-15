@@ -1,0 +1,26 @@
+# Build output
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# IDE/user files
+.vs/
+.idea/
+*.suo
+*.user
+*.rsuser
+*.DotSettings.user
+
+# Local Space Engineers binaries/link targets
+GameBinaries
+GameBinaries/
+Directory.Build.user.props
+*.mdk.local.ini
+
+# Local Space Engineers publish metadata overrides
+*.sbmi.local
+
+# Logs/temp
+*.log
+*.tmp

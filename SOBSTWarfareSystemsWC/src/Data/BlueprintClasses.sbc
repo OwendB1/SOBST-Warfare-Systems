@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+ <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+   <BlueprintClassEntries> 
+		<!--AMMUNITION-->
+        <Entry Class="Consumables" BlueprintSubtypeId="BP_40x127S" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="BP_40x127S" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="BP_40x127DUR" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="BP_APBC_125" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="BP_HESH_125" />
+		<Entry Class="EliteConsumables" BlueprintSubtypeId="BP_EMC_125" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="BP_57HESH" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="BP_TYPE25" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="BP_HORNET_Standard" />
+		<Entry Class="EliteConsumables" BlueprintSubtypeId="BP_APBC_370" />
+		<Entry Class="EliteConsumables" BlueprintSubtypeId="BP_APDU_370" />
+		<Entry Class="EliteConsumables" BlueprintSubtypeId="BP_HESH_370" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="BP_APPC_500" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="BP_NuPC_500" />
+        <Entry Class="EliteConsumables" BlueprintSubtypeId="BP_HESH_500" />
+		<Entry Class="EliteConsumables" BlueprintSubtypeId="BP_EMC_500" />
+
+
+        <!--BLOCKS-->
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeGatlingTurret/VULCAN_PointDefenseCannon" />
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/MARLIN_57mmBoforTurret" />
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/CHURCHHILL_25mmAdenTurret" />
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/HORNET_SwarmerMissileSystem" />
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/SIDEKICK_MBC125" />
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/THUNDER_125mmTwinAutocannon" />
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/FIRESTORM_125mmTripleAutocannon" />
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/FULCRUM_500mmAutoCannon" />
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/RAPTURE_Twin500AutoCannon" />
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/STORMFLY_Triple500AutoCannon" />
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/HERMES_125Casemate" />
+        
+        <Entry Class="LargeBlocks" BlueprintSubtypeId="SmallMissileLauncher/GOLIATH_Fixed_370_AutoCannon" />
+
+        <Entry Class="SmallBlocks" BlueprintSubtypeId="SmallGatlingGun/VULCAN_GatlingGun" />
+    </BlueprintClassEntries>
+</Definitions>

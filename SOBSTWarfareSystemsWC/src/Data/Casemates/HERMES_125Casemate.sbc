@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>HERMES_125Casemate</SubtypeId>
+			</Id>
+			<DisplayName>"HERMES" 125mm Casemate Autocannon</DisplayName>
+			<Description>A powerful 125mm cannon wrapped in a small package with limited firing arcs and lower rate of fire.
+			
+Ammo: APBC-125, HESH-125
+
+Range: 3000m
+			</Description>
+			<Icon>Textures\GUI\Icons\HERMES_125Casemate.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="2"/>
+			<ModelOffset x="0" y="0" z="-1.25"/>
+			<Model>Models\HERMES_125Casemate\HERMES_125Casemate.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="20" />
+				<Component Subtype="Construction" Count="40" />
+				<Component Subtype="LargeTube" Count="8" />
+				<Component Subtype="Motor" Count="22" />
+				<Component Subtype="Computer" Count="18" />
+				<Component Subtype="Construction" Count="15" />
+				<Component Subtype="SteelPlate" Count="35" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="2.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="2.00" EndX="1.00" EndY="3.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.70" File="Models\HERMES_125Casemate\HERMES_125Casemate_BS1.mwm"/>
+				<Model BuildPercentUpperBound="2.00" File="Models\HERMES_125Casemate\HERMES_125Casemate_BS2.mwm"/>
+			</BuildProgressModels>
+			<VoxelPlacement>
+				<StaticMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BlockPairName>HERMES_125Casemate</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<WeaponDefinitionId Subtype="MainBattleCannons_125" />
+            <EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>50</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+            <InventoryMaxVolume>1.75</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<MinElevationDegrees>-15</MinElevationDegrees>
+			<MaxElevationDegrees>15</MaxElevationDegrees>
+			<MinAzimuthDegrees>-40</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>40</MaxAzimuthDegrees>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>2000</MaxRangeMeters>
+			<RotationSpeed>0.0005</RotationSpeed>
+			<ElevationSpeed>0.0005</ElevationSpeed>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>95</PCU>
+			<IsAirTight>false</IsAirTight>
+			<AiEnabled>true</AiEnabled>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

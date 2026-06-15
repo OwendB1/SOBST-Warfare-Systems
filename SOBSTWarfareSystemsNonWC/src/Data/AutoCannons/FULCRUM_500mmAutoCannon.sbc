@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      		<Id>
+       			<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>FULCRUM_500mmAutoCannon</SubtypeId>
+			</Id>
+			<DisplayName>"FULCRUM" 500mm AutoCannon</DisplayName>
+			<Description></Description>
+			<Icon>Textures\GUI\Icons\FULCRUM_500mmAutoCannon.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="2" z="5"/>
+			<Center x="3" y="1" z="3"/>
+			<Model>Models\FULCRUM_AutoCannon500\FULCRUM_500mmAutoCannon.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="30" />
+				<Component Subtype="Construction" Count="60" />
+				<Component Subtype="LargeTube" Count="18" />
+				<Component Subtype="Motor" Count="48" />
+				<Component Subtype="Computer" Count="36" />
+				<Component Subtype="Construction" Count="30" />
+				<Component Subtype="SteelPlate" Count="75" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<VoxelPlacement>
+				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+				<StaticMode>
+				<PlacementMode>OutsideVoxel</PlacementMode>
+				<MaxAllowed>0.2</MaxAllowed>
+				<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+				<PlacementMode>OutsideVoxel</PlacementMode>
+				<MaxAllowed>0.2</MaxAllowed>
+				<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="1.50" File="Models\FULCRUM_AutoCannon500\FULCRUM_500mmAutoCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="2.00" File="Models\FULCRUM_AutoCannon500\FULCRUM_500mmAutoCannon_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>FULCRUM_500mmAutoCannon</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>80</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="500AC1X" />
+			<InventoryMaxVolume>0.5</InventoryMaxVolume>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>50</MaxElevationDegrees>
+			<MinAzimuthDegrees>-90</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>90</MaxAzimuthDegrees>
+			<RotationSpeed>0.0004</RotationSpeed>
+			<ElevationSpeed>0.0004</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>3000</MaxRangeMeters>
+			<AiEnabled>true</AiEnabled>
+			<DamageEffectId>213</DamageEffectId>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

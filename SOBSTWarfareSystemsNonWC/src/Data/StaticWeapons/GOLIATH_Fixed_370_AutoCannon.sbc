@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+            <Id>
+                <TypeId>SmallMissileLauncher</TypeId>
+				<SubtypeId>GOLIATH_Fixed_370_AutoCannon</SubtypeId>
+			</Id>
+			<DisplayName>"GOLIATH" 370mm Static AutoCannon</DisplayName>
+			<Description>Range::2 km
+			
+Ammunition Required::
+-> APBC-370 - Armor Piercing Ballistic Cap Shell
+-> APDU-370 - Armor Piercing Depleted Uranium Shell
+-> HESH-370 - High Explosive Squashed Head Shell</Description>
+			<Icon>Textures\GUI\Icons\GOLIATH_Fixed_370_AutoCannon.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<GuiVisible>false</GuiVisible>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="7"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\GOLIATH_Fixed_370_AutoCannon\GOLIATH_Fixed_370_AutoCannon.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="Construction" Count="8" />
+                <Component Subtype="MetalGrid" Count="30" />
+                <Component Subtype="LargeTube" Count="25" />
+                <Component Subtype="Motor" Count="6" />
+                <Component Subtype="Computer" Count="4" />
+                <Component Subtype="SteelPlate" Count="15" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\GOLIATH_Fixed_370_AutoCannon\GOLIATH_Fixed_370_AutoCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\GOLIATH_Fixed_370_AutoCannon\GOLIATH_Fixed_370_AutoCannon_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\GOLIATH_Fixed_370_AutoCannon\GOLIATH_Fixed_370_AutoCannon_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>GOLIATH_Fixed_370_AutoCannon</BlockPairName>
+			<MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <Center x="0" y="0" z="4" />
+			<BuildTimeSeconds>30</BuildTimeSeconds>
+            <EdgeType>Heavy</EdgeType>
+            <WeaponDefinitionId Subtype="GOLIATH_370" />
+            <ResourceSinkGroup>Defense</ResourceSinkGroup>
+            <InventoryMaxVolume>1.14</InventoryMaxVolume>
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>825</PCU>
+            <TargetingGroups>
+                <string>Weapons</string>
+            </TargetingGroups>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

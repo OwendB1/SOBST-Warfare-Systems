@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        	<TypeId>LargeGatlingTurret</TypeId>
+				  <SubtypeId>VULCAN_PointDefenseCannon</SubtypeId>
+			</Id>
+			<DisplayName>"VULCAN" Point Defense Cannon</DisplayName>
+			<Description>A high rate of fire turret with a high capacity ammo drum.
+
+Ammo: 40x127mm Copper Jacket High Velocity Rounds
+40x127mm Copper Jacket High Velocity Depleted Uranium Rounds
+
+Range: 1500m</Description>
+			<Icon>Textures\GUI\Icons\VULCAN_PointDefenseCannon.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\VULCAN_PointDefenseCannon\VULCAN_PointDefenseCannon.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="Construction" Count="25" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="SmallTube" Count="12" />
+        <Component Subtype="Motor" Count="8" />
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.16" StartY="0.07" EndX="0.84" EndY="0.74"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\VULCAN_PointDefenseCannon\VULCAN_PointDefenseCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\VULCAN_PointDefenseCannon\VULCAN_PointDefenseCannon_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>VULCAN_PointDefenseCannon</BlockPairName>
+			<VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+	    <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+	    <InventoryMaxVolume>0.684</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <HiddenTargetingOptions>Friends</HiddenTargetingOptions>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <MinElevationDegrees>-20</MinElevationDegrees> 
+      <MaxElevationDegrees>80</MaxElevationDegrees>
+      <MinAzimuthDegrees>-180</MinAzimuthDegrees>
+      <MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+      <RotationSpeed>0.008</RotationSpeed>
+      <ElevationSpeed>0.008</ElevationSpeed>
+      <IdleRotation>false</IdleRotation>
+      <MaxRangeMeters>1500</MaxRangeMeters>
+      <MinFov>0.1</MinFov>
+      <MaxFov>1.04719755</MaxFov>
+      <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>200</PCU>
+      <IsAirTight>false</IsAirTight>
+      <AiEnabled>true</AiEnabled>
+	    <WeaponDefinitionId Subtype="VULCAN_PDC" />
+      <UpCameraOffset>0.275</UpCameraOffset>
+			<ForwardCameraOffset>0.6</ForwardCameraOffset>
+      <AmmoPullAmountPerTick>3</AmmoPullAmountPerTick>
+      <InventoryFillFactorMin>.25</InventoryFillFactorMin>
+      <InventoryFillFactorMax>.5</InventoryFillFactorMax>
+      <TieredUpdateTimes>
+          <unsignedInt>10</unsignedInt>
+          <unsignedInt>0</unsignedInt>
+      </TieredUpdateTimes>
+      <TargetingGroups>
+          <string>Weapons</string>
+      </TargetingGroups>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

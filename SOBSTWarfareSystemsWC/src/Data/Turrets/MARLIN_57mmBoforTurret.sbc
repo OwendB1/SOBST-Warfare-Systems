@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>MARLIN_57mmBoforTurret</SubtypeId>
+			</Id>
+			<DisplayName>"MARLIN" 57mm Bofor Turret</DisplayName>
+			<Description>A quad-barreled turret sporting four 57mm bofors cannons that fire in rapid succession.
+
+Ammo: 57x438mm HESH Ammo Clip
+
+Range: 2500m			
+			</Description>
+			<Icon>Textures\GUI\Icons\MARLIN_57mmBoforTurret.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<PlaceDecals>false</PlaceDecals>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\MARLIN_57mmBoforTurret\MARLIN_57mmBoforTurret.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="20" />
+				<Component Subtype="Construction" Count="50" />
+				<Component Subtype="SmallTube" Count="20" />
+				<Component Subtype="Motor" Count="24" />
+				<Component Subtype="Computer" Count="20" />
+				<Component Subtype="Construction" Count="25" />
+				<Component Subtype="SteelPlate" Count="45" />
+			</Components>
+      		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<VoxelPlacement>
+				<StaticMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\MARLIN_57mmBoforTurret\MARLIN_57mmBoforTurret_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\MARLIN_57mmBoforTurret\MARLIN_57mmBoforTurret_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>MARLIN_57mmBoforTurret</BlockPairName>
+			<EdgeType>Light</EdgeType>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>50</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="MARLIN_57MM" />
+			<OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>90</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>2000</MaxRangeMeters>
+			<RotationSpeed>0.0005</RotationSpeed>
+			<ElevationSpeed>0.0005</ElevationSpeed>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>125</PCU>
+			<IsAirTight>false</IsAirTight>
+            <UpCameraOffset>0.5</UpCameraOffset>
+			<ForwardCameraOffset>0.275</ForwardCameraOffset>
+            <AIEnabled>true</AIEnabled>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

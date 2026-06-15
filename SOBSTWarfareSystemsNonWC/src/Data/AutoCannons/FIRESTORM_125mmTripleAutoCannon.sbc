@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>FIRESTORM_125mmTripleAutoCannon</SubtypeId>
+			</Id>
+			<DisplayName>"FIRESTORM" 125mm Triple AutoCannon</DisplayName>
+			<Description>FIRESTORM</Description>
+			<Icon>Textures\GUI\Icons\FIRESTORM_125mmTripleAutoCannon.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<PlaceDecals>false</PlaceDecals>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="1" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\FIRESTORM_125mmTripleAutoCannon\FIRESTORM_125mmTripleAutoCannon.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="80" />
+				<Component Subtype="Construction" Count="60" />
+				<Component Subtype="LargeTube" Count="24" />
+				<Component Subtype="Motor" Count="40" />
+				<Component Subtype="Computer" Count="35" />
+				<Component Subtype="Construction" Count="30" />
+				<Component Subtype="SteelPlate" Count="35" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.68" StartY="0.68" EndX="2.32" EndY="2.32" Default="true"/>
+			</MountPoints>
+			<VoxelPlacement>
+				<StaticMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.45" File="Models\FIRESTORM_125mmTripleAutoCannon\FIRESTORM_125mmTripleAutoCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.90" File="Models\FIRESTORM_125mmTripleAutoCannon\FIRESTORM_125mmTripleAutoCannon_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>FIRESTORM_125mmTripleAutoCannon</BlockPairName>
+			<WeaponDefinitionId Subtype="Triple125" />
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>110</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+            <InventoryMaxVolume>1</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>90</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>2000</MaxRangeMeters>
+			<RotationSpeed>0.0005</RotationSpeed>
+			<ElevationSpeed>0.0005</ElevationSpeed>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>215</PCU>
+			<IsAirTight>false</IsAirTight>
+            <UpCameraOffset>0</UpCameraOffset>
+			<ForwardCameraOffset>3.0</ForwardCameraOffset>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

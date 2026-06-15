@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeGatlingTurret</TypeId>
+				<SubtypeId>CHURCHHILL_25mmAdenTurret</SubtypeId>
+			</Id>
+			<DisplayName>"CHURCHHILL" 25mm Aden Turret</DisplayName>
+			<Description></Description>
+			<Icon>Textures\GUI\Icons\CHURCHHILL_25mmAdenTurret.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<PlaceDecals>false</PlaceDecals>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\CHURCHHILL_25mmAdenTurret\CHURCHHILL_25mmAdenTurret.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="35" />
+				<Component Subtype="MetalGrid" Count="25" />
+				<Component Subtype="SmallTube" Count="5" />
+				<Component Subtype="Motor" Count="14" />
+				<Component Subtype="Computer" Count="20" />
+				<Component Subtype="Construction" Count="10" />
+				<Component Subtype="SteelPlate" Count="25" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.14" StartY="0.05" EndX="0.86" EndY="0.75"/>
+			</MountPoints>
+			<VoxelPlacement>
+				<StaticMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\CHURCHHILL_25mmAdenTurret\CHURCHHILL_25mmAdenTurret_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\CHURCHHILL_25mmAdenTurret\CHURCHHILL_25mmAdenTurret_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>CHURCHHILL_25mmAdenTurret</BlockPairName>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>50</BuildTimeSeconds>
+			<WeaponDefinitionId Subtype="CHURCHHILL_25MM" />
+			<OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>90</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>2000</MaxRangeMeters>
+			<RotationSpeed>0.0005</RotationSpeed>
+			<ElevationSpeed>0.0005</ElevationSpeed>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>205</PCU>
+			<IsAirTight>false</IsAirTight>
+            <UpCameraOffset>0</UpCameraOffset>
+			<ForwardCameraOffset>1.5</ForwardCameraOffset>
+            <AIEnabled>true</AIEnabled>
+			<SubpartPairing>
+                <dictionary>
+                    <item>
+                        <Key>Base1</Key>
+                        <Value>MissileTurretBase1</Value>
+                    </item>
+                    <item>
+                        <Key>Base2</Key>
+                        <Value>MissileTurretBase1/MissileTurretBarrels</Value>
+                    </item>
+                    <item>
+                        <Key>Barrel</Key>
+                        <Value>MissileTurretBase1/MissileTurretBarrels</Value>
+                    </item>
+                </dictionary>
+            </SubpartPairing>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

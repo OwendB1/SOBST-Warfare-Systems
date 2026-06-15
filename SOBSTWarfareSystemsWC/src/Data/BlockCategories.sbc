@@ -1,0 +1,75 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CategoryClasses>
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+            <Name>LargeBlocks</Name>
+            <StrictSearch>true</StrictSearch>
+            <ItemIds>
+                <string>LargeGatlingTurret/VULCAN_PointDefenseCannon</string>
+				<string>LargeMissileTurret/SIDEKICK_125AutoCannon</string>
+				<string>LargeMissileTurret/FULCRUM_500mmAutoCannon</string>
+				<string>LargeMissileTurret/HERMES_125Casemate</string>
+				<string>SmallMissileLauncher/GOLIATH_Fixed_370_AutoCannon</string>
+				<string>SmallGatlingGun/VULCAN_GatlingGun</string>
+            </ItemIds>
+        </Category>
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>DisplayName_Category_ShipWeapons</DisplayName>
+            <Name>Weapons</Name>
+            <StrictSearch>true</StrictSearch>
+            <ItemIds>
+                <string>LargeGatlingTurret/VULCAN_PointDefenseCannon</string>
+				<string>LargeMissileTurret/SIDEKICK_125AutoCannon</string>
+				<string>LargeMissileTurret/FULCRUM_500mmAutoCannon</string>
+				<string>LargeMissileTurret/HERMES_125Casemate</string>
+				<string>SmallMissileLauncher/GOLIATH_Fixed_370_AutoCannon</string>
+				<string>SmallGatlingGun/VULCAN_GatlingGun</string>
+            </ItemIds>
+        </Category>
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>DisplayName_Category_ShipWeapons</DisplayName>
+            <Name>ShipWeapons</Name>
+            <SearchBlocks>false</SearchBlocks>
+            <IsShipCategory>true</IsShipCategory>
+            <IsBlockCategory>false</IsBlockCategory>
+            <IsToolCategory>true</IsToolCategory>
+            <ItemIds>
+				<string>LargeGatlingTurret/VULCAN_PointDefenseCannon</string>
+				<string>LargeMissileTurret/SIDEKICK_125AutoCannon</string>
+				<string>LargeMissileTurret/FULCRUM_500mmAutoCannon</string>
+				<string>LargeMissileTurret/HERMES_125Casemate</string>
+				<string>SmallMissileLauncher/GOLIATH_Fixed_370_AutoCannon</string>
+				<string>SmallGatlingGun/VULCAN_GatlingGun</string>
+            </ItemIds>
+        </Category>
+        <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+            <Id>
+                <TypeId>GuiBlockCategoryDefinition</TypeId>
+                <SubtypeId/>
+            </Id>
+            <DisplayName>SOBST Military Industries</DisplayName>
+            <Name>SOBSTMilitaryIndustries</Name>
+            <ItemIds>
+                <string>LargeGatlingTurret/VULCAN_PointDefenseCannon</string>
+				<string>LargeMissileTurret/SIDEKICK_125AutoCannon</string>
+				<string>LargeMissileTurret/FULCRUM_500mmAutoCannon</string>
+				<string>LargeMissileTurret/HERMES_125Casemate</string>
+				<string>SmallMissileLauncher/GOLIATH_Fixed_370_AutoCannon</string>
+				<string>SmallGatlingGun/VULCAN_GatlingGun</string>
+            </ItemIds>
+        </Category>
+    </CategoryClasses>
+</Definitions>

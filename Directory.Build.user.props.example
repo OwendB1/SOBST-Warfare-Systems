@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <SpaceEngineersDir>/path/to/SpaceEngineers</SpaceEngineersDir>
+    <WeaponCoreDir>/path/to/WeaponCore</WeaponCoreDir>
+  </PropertyGroup>
+</Project>

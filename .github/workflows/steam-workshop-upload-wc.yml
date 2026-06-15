@@ -1,0 +1,96 @@
+name: Upload SOBST Warfare Systems WC
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - production
+    paths:
+      - 'SOBSTWarfareSystemsWC/src/**'
+      - '.github/workflows/steam-workshop-upload-wc.yml'
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required secrets
+        env:
+          STEAM_USERNAME: ${{ secrets.SOBST_WC_STEAM_USERNAME }}
+          STEAM_CONFIG_VDF: ${{ secrets.SOBST_WC_STEAM_CONFIG_VDF }}
+        run: |
+          [ -n "${STEAM_USERNAME:-}" ] || { echo "Missing secret: SOBST_WC_STEAM_USERNAME"; exit 1; }
+          [ -n "${STEAM_CONFIG_VDF:-}" ] || { echo "Missing secret: SOBST_WC_STEAM_CONFIG_VDF"; exit 1; }
+          echo "::add-mask::$STEAM_CONFIG_VDF"
+          echo "Using cached SteamCMD host config authentication for WC workshop upload."
+
+      - name: Build upload content from folder
+        run: |
+          set -euo pipefail
+
+          CONTENT_DIR="SOBSTWarfareSystemsWC/src"
+          if [ ! -d "$CONTENT_DIR" ]; then
+            echo "Expected upload folder not found: $CONTENT_DIR"
+            exit 1
+          fi
+
+          MODINFO_FILE="$CONTENT_DIR/modinfo.sbmi"
+          if [ ! -f "$MODINFO_FILE" ]; then
+            echo "Expected workshop metadata not found: $MODINFO_FILE"
+            exit 1
+          fi
+
+          STAGING="${RUNNER_TEMP}/SOBSTWarfareSystemsWC-upload"
+          rm -rf "$STAGING"
+          mkdir -p "$STAGING"
+          rsync -a --delete "$CONTENT_DIR/" "$STAGING/"
+
+          WORKSHOP_ID="$(MODINFO_FILE="$MODINFO_FILE" python3 -c 'import xml.etree.ElementTree as ET, os; root = ET.parse(os.environ["MODINFO_FILE"]).getroot(); ids = root.findall(".//WorkshopIds/WorkshopId/Id"); print(((ids[0].text or "").strip()) if ids else "")')"
+
+          if [ "$WORKSHOP_ID" != "2854025571" ]; then
+            echo "Expected WC Workshop ID 2854025571, got '${WORKSHOP_ID:-<empty>}'"
+            exit 1
+          fi
+
+          echo "WORKSHOP_ID=$WORKSHOP_ID" >> "$GITHUB_ENV"
+          echo "STAGING_DIR=$STAGING" >> "$GITHUB_ENV"
+
+      - name: Setup SteamCMD
+        uses: andriivitiv/setup-steamcmd@v1.2.0
+
+      - name: Create SteamCMD upload script
+        run: |
+          cat > "$RUNNER_TEMP/workshop_item.vdf" <<EOF
+          "workshopitem"
+          {
+            "appid" "244850"
+            "publishedfileid" "${WORKSHOP_ID}"
+            "contentfolder" "${STAGING_DIR}"
+            "changenote" "GitHub Actions build ${GITHUB_RUN_NUMBER} (${GITHUB_SHA})"
+          }
+          EOF
+
+      - name: Install SteamCMD cached credentials config
+        env:
+          STEAM_CONFIG_VDF: ${{ secrets.SOBST_WC_STEAM_CONFIG_VDF }}
+        run: |
+          set -euo pipefail
+          echo "::add-mask::$STEAM_CONFIG_VDF"
+
+          mkdir -p "$HOME/Steam/config"
+          printf '%s' "$STEAM_CONFIG_VDF" > "$HOME/Steam/config/config.vdf"
+          chmod 600 "$HOME/Steam/config/config.vdf"
+          echo "Wrote Steam cached credentials config to: $HOME/Steam/config/config.vdf"
+
+      - name: Upload to Steam Workshop item
+        env:
+          STEAM_USERNAME: ${{ secrets.SOBST_WC_STEAM_USERNAME }}
+        run: |
+          set -euo pipefail
+          steamcmd +login "$STEAM_USERNAME" +workshop_build_item "$RUNNER_TEMP/workshop_item.vdf" +quit

@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>RAPTURE_Twin500AutoCannon</SubtypeId>
+			</Id>
+			<DisplayName>"RAPTURE" 500mm Twin AutoCannon</DisplayName>
+			<Description></Description>
+			<Icon>Textures\GUI\Icons\RAPTURE_Twin500AutoCannon.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="2" z="5"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\RAPTURE_Twin500AutoCannon\RAPTURE_Twin500AutoCannon.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="30" />
+				<Component Subtype="Construction" Count="60" />
+				<Component Subtype="LargeTube" Count="18" />
+				<Component Subtype="Motor" Count="48" />
+				<Component Subtype="Computer" Count="36" />
+				<Component Subtype="Construction" Count="30" />
+				<Component Subtype="SteelPlate" Count="75" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<VoxelPlacement>
+				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+				<StaticMode>
+				<PlacementMode>OutsideVoxel</PlacementMode>
+				<MaxAllowed>0.2</MaxAllowed>
+				<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+				<PlacementMode>OutsideVoxel</PlacementMode>
+				<MaxAllowed>0.2</MaxAllowed>
+				<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.45" File="Models\RAPTURE_Twin500AutoCannon\RAPTURE_Twin500AutoCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.90" File="Models\RAPTURE_Twin500AutoCannon\RAPTURE_Twin500AutoCannon_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>RAPTURE_Twin500AutoCannon</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>80</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+			<WeaponDefinitionId Subtype="500AC2X" />
+			<InventoryMaxVolume>0.5</InventoryMaxVolume>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>50</MaxElevationDegrees>
+			<MinAzimuthDegrees>-90</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>90</MaxAzimuthDegrees>
+			<RotationSpeed>0.0004</RotationSpeed>
+			<ElevationSpeed>0.0004</ElevationSpeed>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>4000</MaxRangeMeters>
+			<AiEnabled>true</AiEnabled>
+			<DamageEffectId>213</DamageEffectId>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.8</MaxFov>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<AIEnabled>true</AIEnabled>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

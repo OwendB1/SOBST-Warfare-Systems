@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Weapons>
+        <!-- || 125mm AutoCannons || -->
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>125MainBattleCannons</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="30" ShootSoundName="125mmCannon" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="1" />
+            <DeviateShotAngle>0.05</DeviateShotAngle>
+            <ReleaseTimeAfterFire>1500</ReleaseTimeAfterFire>
+            <MuzzleFlashLifeSpan>200</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="Muzzle_Missile_001" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="APBC_125MM_Shell" />
+                <AmmoMagazine Subtype="HESH_125MM_Shell" />
+            </AmmoMagazines>
+            <ReloadTime>5000</ReloadTime>
+        </Weapon>
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>Twin125</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="80" ShootSoundName="125mmCannon" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="2" />
+            <DeviateShotAngle>0.05</DeviateShotAngle>
+            <ReleaseTimeAfterFire>1500</ReleaseTimeAfterFire>
+            <MuzzleFlashLifeSpan>200</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="Muzzle_Missile_001" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+                <Effect Action="Shoot" Dummy="Muzzle_Missile_002" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="APBC_125MM_Shell" />
+                <AmmoMagazine Subtype="HESH_125MM_Shell" />
+            </AmmoMagazines>
+            <ReloadTime>5000</ReloadTime>
+        </Weapon>
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>Triple125</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="80" ShootSoundName="125mmCannon" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="3" />
+            <DeviateShotAngle>0.05</DeviateShotAngle>
+            <ReleaseTimeAfterFire>1500</ReleaseTimeAfterFire>
+            <MuzzleFlashLifeSpan>200</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="Muzzle_Missile_001" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+                <Effect Action="Shoot" Dummy="Muzzle_Missile_002" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+                <Effect Action="Shoot" Dummy="Muzzle_Missile_003" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="APBC_125MM_Shell" />
+                <AmmoMagazine Subtype="HESH_125MM_Shell" />
+            </AmmoMagazines>
+            <ReloadTime>5000</ReloadTime>
+        </Weapon>
+
+        <!-- || 500mm AutoCannons || -->
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>500AC1X</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="80" ShootSoundName="125mmCannon" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="1" />
+            <DeviateShotAngle>0.05</DeviateShotAngle>
+            <ReleaseTimeAfterFire>1500</ReleaseTimeAfterFire>
+            <MuzzleFlashLifeSpan>200</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_missile_1" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="APPC_500" />
+                <AmmoMagazine Subtype="NuPC_500" />
+                <AmmoMagazine Subtype="HESH_500" />
+            </AmmoMagazines>
+            <ReloadTime>5000</ReloadTime>
+        </Weapon>
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>500AC2X</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="80" ShootSoundName="125mmCannon" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="2" />
+            <DeviateShotAngle>0.05</DeviateShotAngle>
+            <ReleaseTimeAfterFire>1500</ReleaseTimeAfterFire>
+            <MuzzleFlashLifeSpan>200</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_missile_1" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+                <Effect Action="Shoot" Dummy="muzzle_missile_2" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="APPC_500" />
+                <AmmoMagazine Subtype="NuPC_500" />
+                <AmmoMagazine Subtype="HESH_500" />
+            </AmmoMagazines>
+            <ReloadTime>5000</ReloadTime>
+        </Weapon>
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>500AC3X</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="80" ShootSoundName="125mmCannon" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="3" />
+            <DeviateShotAngle>0.05</DeviateShotAngle>
+            <ReleaseTimeAfterFire>1500</ReleaseTimeAfterFire>
+            <MuzzleFlashLifeSpan>200</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="muzzle_missile_1" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+                <Effect Action="Shoot" Dummy="muzzle_missile_2" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+                <Effect Action="Shoot" Dummy="muzzle_missile_3" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="APPC_500" />
+                <AmmoMagazine Subtype="NuPC_500" />
+                <AmmoMagazine Subtype="HESH_500" />
+            </AmmoMagazines>
+            <ReloadTime>5000</ReloadTime>
+        </Weapon>
+
+        <Weapon>
+            <Id>
+                <TypeId>WeaponDefinition</TypeId>
+                <SubtypeId>GOLIATH_370</SubtypeId>
+            </Id>
+            <MissileAmmoData RateOfFire="80" ShootSoundName="GOLIATH_370" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="1" />
+            <DeviateShotAngle>0.05</DeviateShotAngle>
+            <ReleaseTimeAfterFire>1500</ReleaseTimeAfterFire>
+            <MuzzleFlashLifeSpan>120</MuzzleFlashLifeSpan>
+            <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+            <Effects>
+                <Effect Action="Shoot" Dummy="Muzzle_Missile_001" Particle="SOBST_AutoCannon_Muzzleblast" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            </Effects>
+            <AmmoMagazines>
+                <AmmoMagazine Subtype="APBC_370_GOLIATH" />
+                <AmmoMagazine Subtype="APDU_370_GOLIATH" />
+                <AmmoMagazine Subtype="HESH_370_GOLIATH" />
+            </AmmoMagazines>
+            <ReloadTime>8000</ReloadTime>
+        </Weapon>
+
+        <Weapon>
+      <Id>
+        <TypeId>WeaponDefinition</TypeId>
+        <SubtypeId>VULCAN_PDC</SubtypeId>
+      </Id>
+      <ProjectileAmmoData RateOfFire="2400" ShootSoundName="VULCAN_40MM"/>
+      <ReleaseTimeAfterFire>102</ReleaseTimeAfterFire>
+	  <DeviateShotAngle>0.2</DeviateShotAngle>
+      <MuzzleFlashLifeSpan>23</MuzzleFlashLifeSpan>
+      <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <AmmoMagazines>
+        <AmmoMagazine Subtype="40x127_VULCAN" />
+        <AmmoMagazine Subtype="40x127_VULCAN_DUR" />
+        
+      </AmmoMagazines>
+      <ReloadTime>6000</ReloadTime>
+    </Weapon>
+
+    <Weapon>
+        <Id>
+            <TypeId>WeaponDefinition</TypeId>
+            <SubtypeId>MARLIN_57MM</SubtypeId>
+        </Id>
+        <MissileAmmoData RateOfFire="200" ShootSoundName="MARLIN_57MM" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="16" />
+        <DeviateShotAngle>0.05</DeviateShotAngle>
+        <ReleaseTimeAfterFire>1500</ReleaseTimeAfterFire>
+        <MuzzleFlashLifeSpan>100</MuzzleFlashLifeSpan>
+        <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+        <Effects>
+            <Effect Action="Shoot" Dummy="Muzzle_Missile_001" Particle="Muzzle_Flash_LargeCalibre" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            <Effect Action="Shoot" Dummy="Muzzle_Missile_002" Particle="Muzzle_Flash_LargeCalibre" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            <Effect Action="Shoot" Dummy="Muzzle_Missile_003" Particle="Muzzle_Flash_LargeCalibre" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+            <Effect Action="Shoot" Dummy="Muzzle_Missile_004" Particle="Muzzle_Flash_LargeCalibre" Loop="false" InstantStop="false" DisplayOnlyOnDummyFiring="true"/>
+        </Effects>
+        <AmmoMagazines>
+            <AmmoMagazine Subtype="MARLIN_57_HESH" />
+        </AmmoMagazines>
+        <ReloadTime>5000</ReloadTime>
+    </Weapon>
+
+    <Weapon>
+        <Id>
+            <TypeId>WeaponDefinition</TypeId>
+            <SubtypeId>CHURCHHILL_25MM</SubtypeId>
+        </Id>
+        <MissileAmmoData RateOfFire="350" ShootSoundName="MARLIN_57MM" FlightSoundName="HeavyShellFlightSound" ShotsInBurst="84" />
+        <DeviateShotAngle>0.02</DeviateShotAngle>
+        <ReleaseTimeAfterFire>204</ReleaseTimeAfterFire>
+        <MuzzleFlashLifeSpan>50</MuzzleFlashLifeSpan>
+        <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+        <AmmoMagazines>
+            <AmmoMagazine Subtype="CHURCHHILL_Type25" />
+        </AmmoMagazines>
+        <ReloadTime>6000</ReloadTime>
+    </Weapon>
+
+    <!-- || HORNET || -->
+
+    <Weapon>
+        <Id>
+            <TypeId>WeaponDefinition</TypeId>
+            <SubtypeId>HORNET_SwarmerMissileSystem</SubtypeId>
+        </Id>
+        <MissileAmmoData RateOfFire="320" ShootSoundName="Arc220mmMissileShot" FlightSoundName="MissileFlightSound" ShotsInBurst="78" />
+        <DeviateShotAngle>0.02</DeviateShotAngle>
+        <NoAmmoSoundName>WepShipRailgunNoAmmo</NoAmmoSoundName>
+        <AmmoMagazines>
+            <AmmoMagazine Subtype="HORNET_80x652_Standard" />
+        </AmmoMagazines>
+        <ReloadTime>6000</ReloadTime>
+       
+    </Weapon>
+
+    </Weapons>
+
+</Definitions>

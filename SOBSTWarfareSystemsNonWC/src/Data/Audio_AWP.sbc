@@ -1,0 +1,591 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+
+	<!-- 20mm + 43mm SHOT -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc20mmPDGShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="20mmPDGShot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>1</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\43mmRAC_SHOT.wav</Start>
+		</Wave>
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real20mmPDGShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="20mmPDGShot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>true</Loopable>
+      <Volume>4</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\43mmRAC_SHOT.wav</Start>
+		</Wave>
+      </Waves>
+    </Sound>
+	
+	<!-- 25mm SHOT -->
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc25mmRotaryGunSHOT</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="25mmRotaryGunSHOT" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>6</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\25mmRotaryGun_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real25mmRotaryGunSHOT</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="25mmRotaryGunSHOT" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>4</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\25mmRotaryGun_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<!-- 25mm Heavy Machine Gun -->
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc25mmHMG_SHOT</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="25mmHMG_SHOT" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\HMGShotTest.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real25mmHMG_SHOT</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="25mmHMG_SHOT" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>1</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\HMGShotTest.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<!-- 30mm Chaingun SHOT -->
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc30mmChaingunShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="30mmChaingunShot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>1</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\30mmChaingun_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real30mmChaingunShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="30mmChaingunShot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\30mmChaingun_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<!-- 30mm Storm SHOT -->
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc30mmStormShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="30mmStormShot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>1</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\30mmStorm_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real30mmStormShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="30mmStormShot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\30mmStorm_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<!-- 150mm Artillery SHOT -->
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc150mmArtilleryShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="150mmArtilleryShot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\150mmArtillery_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real150mmArtilleryShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="150mmArtilleryShot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>4</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\150mmArtillery_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<!-- 220mm Missile SHOT -->
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc220mmMissileShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="220mmMissileShot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>1</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\220mmMissile_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real220mmMissileShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="220mmMissileShot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\220mmMissile_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<!-- 300mm Flak SHOT -->
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcFlak300Shot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="Flak300Shot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\300mmFlak_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>RealFlak300Shot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="Flak300Shot" />
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>4</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\300mmFlak_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<!-- 400mm All SHOT -->
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc400Shot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="400Shot"/>
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\400mm_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>GOLIATH_370</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>1000</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="400Shot"/>
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\400mm_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+  
+	<!-- 800mm Torpedo SHOT -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Arc800mmTorpedoSHOT</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="800mmTorpedoSHOT"/>
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\800mmTorpedo.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Real800mmTorpedoSHOT</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="800mmTorpedoSHOT"/>
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\800mmTorpedo_Real.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+  
+	<!-- 1000mm SHOT -->
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcFOB1000Shot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="FOB1000Shot"/>
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\FOB1000_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+  
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>RealFOB1000Shot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="FOB1000Shot"/>
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>4</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\FOB1000_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    
+	<!-- 1500mm SHOT -->
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcFOB1500Shot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="FOB1500Shot"/>
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\FOB1500_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+    
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>RealFOB1500Shot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="FOB1500Shot"/>
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>4</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\FOB1500_SHOT.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<!-- Goddamnit -->
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcBadIdea1SHOT</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="BadIdea1SHOT"/>
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>5</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Arcade\Ara_Ara.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>RealBadIdea1SHOT</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>800</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+	  <DistantSounds>
+        <DistantSound DistanceCrossfade="10" Distance="800" Sound="BadIdea1SHOT"/>
+      </DistantSounds>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>15</DynamicMusicAmount>
+      <Loopable>false</Loopable>
+      <Volume>20</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Realistic\Ara_Ara.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+  </Sounds>
+</Definitions>

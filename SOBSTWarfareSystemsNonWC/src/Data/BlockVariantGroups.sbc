@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlockVariantGroups>	
+	
+        <!-- 125mm AutoCannons Weapons -->
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="125AutoCannons" />
+            <Icon>Textures\GUI\Icons\SIDEKICK_MBC125.dds</Icon>
+            <DisplayName>125mm AutoCannons</DisplayName>
+            <Description></Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="SIDEKICK_125AutoCannon" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="THUNDER_125mmTwinAutocannon" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="FIRESTORM_125mmTripleAutoCannon" />
+            </Blocks>
+        </BlockVariantGroup>
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="500AutoCannons" />
+            <Icon>Textures\GUI\Icons\FULCRUM_500mmAutoCannon.dds</Icon>
+            <DisplayName>500mm AutoCannons</DisplayName>
+            <Description></Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="FULCRUM_500mmAutoCannon" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="RAPTURE_Twin500AutoCannon" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="STORMFLY_Triple500AutoCannon" />
+            </Blocks>
+        </BlockVariantGroup>
+        <!-- Turret Weapons -->
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="TurretsGroup" />
+            <Icon>Textures\GUI\Icons\VULCAN_PointDefenseCannon.dds</Icon>
+            <DisplayName>Turrets</DisplayName>
+            <Description></Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_LargeGatlingTurret" Subtype="VULCAN_PointDefenseCannon" />
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="MARLIN_57mmBoforTurret" />
+                <Block Type="MyObjectBuilder_LargeGatlingTurret" Subtype="CHURCHHILL_25mmAdenTurret" />
+
+                <Block Type="MyObjectBuilder_LargeMissileTurret" Subtype="HORNET_SwarmerMissileSystem" />
+            </Blocks>
+        </BlockVariantGroup>
+        <!-- Static Weapons -->
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="ShipWeaponStaticGroup" />
+            <Icon>Textures\GUI\Icons\GOLIATH_Fixed_370_AutoCannon.dds</Icon>
+            <DisplayName>Static Weaponary</DisplayName>
+            <Description></Description>
+            <Blocks>
+                <Block Type="MyObjectBuilder_SmallMissileLauncher" Subtype="GOLIATH_Fixed_370_AutoCannon" />
+                <Block Type="MyObjectBuilder_SmallGatlingGun" Subtype="VULCAN_GatlingGun" />
+            </Blocks>
+        </BlockVariantGroup>
+	
+    </BlockVariantGroups>
+</Definitions>

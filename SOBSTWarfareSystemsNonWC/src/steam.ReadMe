@@ -1,0 +1,109 @@
+[img]https://i.imgur.com/fVVaDCS.gif[/img]
+[i]If you enjoy this mod, please rate! Thank You.[/i]
+
+[b]This mod is currently still in BETA! Any feedback is greatly appreciated![/b]
+
+[h1][b]SOBST[/b] Warfare Systems[/h1]
+[hr][/hr]
+[quote][h2]+-----| Lore |-----+[/h2]
+Following the recent end of the war between Redwood Industries and The Green Drone Armada, SOBST Military Industries switched development from Military vessels to producing systems purposefully built for warfare. As SMI was not a weapon's manufacturer, the Research & Development team sent out scout ships to multiple systems in order to research any weapons found on crashed and derelict ships.
+
+2 Years after SMI Command authorised the mission to scout for weapons, an R&D Scout Vessel, S3041, found an old, abandoned GDA research facility which was operating on backup power with it's main computer core intact. Due to its position close to a blackhole, attempts to communicate with command failed, so Captain S. Hood agreed to isolate the computer core and return to base for further investigation. What the team found took them all by surprise.
+[/quote]
+
+Inspired by Ryder's BattleCannons and Turrets mod, SMI is happy to introduce our latest venture, [b]SOBST Warfare Systems[/b].
+
+[h3]+----| TURRETS |----+[/h3]
+[table equalcells=1]
+    [tr][th]Weapon ID[/th][th]Grid Size[/th][th]Range[/th][th]Ammo Required[/th][/tr]
+    [tr][td][/td][/tr]
+    [tr][td]"VULCAN" Point Defence Cannon[/td]
+        [td]Large Grid - 1x1x1[/td]
+        [td]1500 m[/td]
+        [td]40x127mm Copper Jacket High Velocity Rounds
+        40x127mm Copper Jacket High Velocity Depleted Uranium Rounds[/td][/tr]
+    [tr][td]"MARLIN" 57mm Bofor Turret[/td]
+        [td]Large Grid - 1x1x1[/td]
+        [td]2500 m[/td]
+        [td]57x438mm HESH Ammo Clip[/td][/tr]
+    [tr][td]"CHURCHHILL" 25mm Aden Turret[/td]
+        [td]Large Grid - 1x1x1[/td]
+        [td]2000 m[/td]
+        [td]TYPE-25 - Standard 25x131mm CHURCHHILL Ammo Box[/td][/tr]
+    [tr][td]"HORNET" Swarmer Missile System[/td]
+        [td]Large Grid - 1x1x1[/td]
+        [td]800 m[/td]
+        [td]HORNET 80x652mm Standard[/td][/tr]
+[/table]
+
+[h3]+----| 125mm AUTOCANNONS |----+[/h3]
+[table equalcells=1]
+    [tr][th]Weapon ID[/th][th]Grid Size[/th][th]Range[/th][th]Ammo Required[/th][/tr]
+    [tr][td][/td][/tr]
+    [tr][td]"SIDEKICK" 125mm AutoCannon[/td]
+        [td]Large Grid - 1x1x1[/td]
+        [td]3000 m[/td]
+        [td]APBC-125 - Armor Piercing Ballistic Cap 125mm Shell[/td][/tr]
+    [tr][td]"THUNDER" 125mm Twin AutoCannon[/td]
+        [td]Large Grid - 3x1x3[/td]
+        [td]3000 m[/td]
+        [td]APBC-125 - Armor Piercing Ballistic Cap 125mm Shell[/td][/tr]
+    [tr][td]"FIRESTORM" 125mm Triple AutoCannon[/td]
+        [td]Large Grid - 3x1x3[/td]
+        [td]3000 m[/td]
+        [td]APBC-125 - Armor Piercing Ballistic Cap 125mm Shell[/td][/tr]
+[/table]
+
+[h3]+----| 500mm AUTOCANNONS |----+[/h3]
+[table equalcells=1]
+    [tr][th]Weapon ID[/th][th]Grid Size[/th][th]Range[/th][th]Ammo Required[/th][/tr]
+    [tr][td][/td][/tr]
+    [tr][td]"FULCRUM" 500mm AutoCannon[/td]
+        [td]Large Grid - 5x2x5[/td]
+        [td]8000 m[/td]
+        [td]APPC-500 - Armor Piercing Pin Capped 500mm Shell
+        NuPC-500 - Nuclear Pin Capped 500mm Shell
+        HESH-500 - High Explosive Squashed Head 500mm Shell[/td][/tr]
+    [tr][td]"RAPTURE" 500mm Twin AutoCannon[/td]
+        [td]Large Grid - 5x2x5[/td]
+        [td]8000 m[/td]
+        [td]APPC-500 - Armor Piercing Pin Capped 500mm Shell
+        NuPC-500 - Nuclear Pin Capped 500mm Shell
+        HESH-500 - High Explosive Squashed Head 500mm Shell[/td][/tr]
+    [tr][td]"STORMFLY" 500mm Triple AutoCannon[/td]
+        [td]Large Grid - 5x2x5[/td]
+        [td]8000 m[/td]
+        [td]APPC-500 - Armor Piercing Pin Capped 500mm Shell
+        NuPC-500 - Nuclear Pin Capped 500mm Shell
+        HESH-500 - High Explosive Squashed Head 500mm Shell[/td][/tr]
+[/table]
+
+[h3]+----| STATIC WEAPONS |----+[/h3]
+[table equalcells=1]
+    [tr][th]Weapon ID[/th][th]Grid Size[/th][th]Range[/th][th]Ammo Required[/th][/tr]
+    [tr][td][/td][/tr]
+    [tr][td]"GOLIATH" 370mm Static AutoCannon[/td]
+        [td]Large Grid - 1x1x7[/td]
+        [td]5000 m[/td]
+        [td]APBC-370 - Armor Piercing Ballistic Cap Shell
+        APDU-370 - Armor Piercing Depleted Uranium Shell
+        HESH-370 - High Explosive Squashed Head Shell[/td][/tr]
+    [tr][td]"VULCAN" Static Gatling Gun[/td]
+        [td]Small Grid - 1x1x5[/td]
+        [td]1500 m[/td]
+        [td]40x127mm Copper Jacket High Velocity Rounds
+        40x127mm Copper Jacket High Velocity Depleted Uranium Rounds[/td][/tr]
+[/table]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2854025571][h3][i](Link)[/i] SOBST Warfare Systems - WC Edition[/h3][/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=543635673][h3][i](Link)[/i] Rider's BCAT Mod[/h3][/url]
+
+[url=https://discord.gg/CykHq7EDTJ][img]http://i.imgur.com/H9WX4eY.png[/img][/url]
+
+[h3]Disclaimer[/h3]
+[b][i]All models used are originals from Substicious and OwendB.[/i]
+
+DO NOT USE WITH OTHER SOBST VERSIONS AS IT WILL BREAK THINGS!!
+
+*PLEASE DO NOT REUPLOAD, UNLESS PERMISSION HAS BEEN EXPRESSED!*[/b]

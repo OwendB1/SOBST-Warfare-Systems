@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Weapons>
+		<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>MainBattleCannons_125</SubtypeId>
+			</Id>
+			<ProjectileAmmoData />
+			<AmmoMagazines>
+				<AmmoMagazine Subtype="APBC_125MM_Shell" />
+				<AmmoMagazine Subtype="HESH_125MM_Shell" />
+			</AmmoMagazines>
+			<ReloadTime>5000</ReloadTime>
+		</Weapon>
+
+		<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>MainBattleCannons_500</SubtypeId>
+			</Id>
+			<ProjectileAmmoData />
+			<AmmoMagazines>
+				<AmmoMagazine Subtype="APPC_500" />
+				<AmmoMagazine Subtype="HESH_500" />
+			</AmmoMagazines>
+			<ReloadTime>5000</ReloadTime>
+		</Weapon>
+
+		<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>VULCAN_PDC</SubtypeId>
+			</Id>
+			<ProjectileAmmoData />
+			<AmmoMagazines>
+				<AmmoMagazine Subtype="40x127_VULCAN" />
+				<AmmoMagazine Subtype="40x127_VULCAN_DUR" />
+			</AmmoMagazines>
+			<ReloadTime>5000</ReloadTime>
+		</Weapon>
+
+		<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>VULCAN</SubtypeId>
+			</Id>
+			<ProjectileAmmoData />
+			<AmmoMagazines>
+				<AmmoMagazine Subtype="40x127_VULCAN" />
+				<AmmoMagazine Subtype="40x127_VULCAN_DUR" />
+			</AmmoMagazines>
+			<ReloadTime>5000</ReloadTime>
+		</Weapon>
+
+		<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>GOLIATH_370</SubtypeId>
+			</Id>
+			<ProjectileAmmoData />
+			<AmmoMagazines>
+				<AmmoMagazine Subtype="APBC_370_GOLIATH" />
+				<AmmoMagazine Subtype="APDU_370_GOLIATH" />
+				<AmmoMagazine Subtype="HESH_370_GOLIATH" />
+			</AmmoMagazines>
+			<ReloadTime>8000</ReloadTime>
+		</Weapon>
+
+		<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>MARLIN_57MM</SubtypeId>
+			</Id>
+			<ProjectileAmmoData />
+			<AmmoMagazines>
+				<AmmoMagazine Subtype="MARLIN_57_HESH" />
+			</AmmoMagazines>
+			<ReloadTime>5000</ReloadTime>
+		</Weapon>
+
+		<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>CHURCHHILL_25MM</SubtypeId>
+			</Id>
+			<ProjectileAmmoData />
+			<AmmoMagazines>
+				<AmmoMagazine Subtype="CHURCHHILL_Type25" />
+			</AmmoMagazines>
+			<ReloadTime>6000</ReloadTime>
+		</Weapon>
+
+		<Weapon>
+			<Id>
+				<TypeId>WeaponDefinition</TypeId>
+				<SubtypeId>HORNET</SubtypeId>
+			</Id>
+			<ProjectileAmmoData />
+			<AmmoMagazines>
+				<AmmoMagazine Subtype="HORNET_80x652_Standard" />
+			</AmmoMagazines>
+			<ReloadTime>5000</ReloadTime>
+		</Weapon>
+
+	</Weapons>
+</Definitions>

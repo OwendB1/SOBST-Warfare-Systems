@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+			<Id>
+				<TypeId>LargeMissileTurret</TypeId>
+				<SubtypeId>SIDEKICK_125AutoCannon</SubtypeId>
+			</Id>
+            <DisplayName>"SIDEKICK" 125mm AutoCannon</DisplayName>
+			<Description>The smallest one in the lineup, the SIDEKICK is a 1x1 Autocannon platform that can fit in almost every recess you can think of as long as the barrel is clear.
+			
+Ammo: APBC-125, HESH-125			
+			
+Range: 3000m			
+			</Description>
+            <Icon>Textures\GUI\Icons\SIDEKICK_MBC125.dds</Icon>
+            <CubeSize>Large</CubeSize>
+			<PlaceDecals>false</PlaceDecals>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+            <Model>Models\SIDEKICK_MainBattleCannon125\MBC125S_MainBattleCannon125Single.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<Components>
+				<Component Subtype="SteelPlate" Count="20" />
+				<Component Subtype="Construction" Count="40" />
+				<Component Subtype="LargeTube" Count="8" />
+				<Component Subtype="Motor" Count="22" />
+				<Component Subtype="Computer" Count="18" />
+				<Component Subtype="Construction" Count="20" />
+				<Component Subtype="SteelPlate" Count="45" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<VoxelPlacement>
+				<StaticMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0</MinAllowed>
+				</StaticMode>
+				<DynamicMode>
+					<PlacementMode>OutsideVoxel</PlacementMode>
+					<MaxAllowed>0.2</MaxAllowed>
+					<MinAllowed>0.01</MinAllowed>
+				</DynamicMode>
+			</VoxelPlacement>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\SIDEKICK_MainBattleCannon125\MBC125S_MainBattleCannon125Single_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\SIDEKICK_MainBattleCannon125\MBC125S_MainBattleCannon125Single_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>SIDEKICK_125AutoCannon</BlockPairName>
+            <WeaponDefinitionId Subtype="MainBattleCannons_125" />
+            <EdgeType>Light</EdgeType>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>50</BuildTimeSeconds>
+			<OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+            <InventoryMaxVolume>0.75</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<MinElevationDegrees>-10</MinElevationDegrees>
+			<MaxElevationDegrees>90</MaxElevationDegrees>
+			<MinAzimuthDegrees>-180</MinAzimuthDegrees>
+			<MaxAzimuthDegrees>180</MaxAzimuthDegrees>
+			<IdleRotation>false</IdleRotation>
+			<MaxRangeMeters>2000</MaxRangeMeters>
+			<RotationSpeed>0.0005</RotationSpeed>
+			<ElevationSpeed>0.0005</ElevationSpeed>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<MinFov>0.1</MinFov>
+			<MaxFov>1.04719755</MaxFov>
+			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>125</PCU>
+			<IsAirTight>false</IsAirTight>
+            <UpCameraOffset>0</UpCameraOffset>
+			<ForwardCameraOffset>3.0</ForwardCameraOffset>
+			<AiEnabled>true</AiEnabled>
+		</Definition>
+	</CubeBlocks>
+</Definitions>

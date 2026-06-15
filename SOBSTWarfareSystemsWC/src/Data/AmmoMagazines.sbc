@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <AmmoMagazines>
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>APBC_125MM_Shell</SubtypeId>
+            </Id>
+            <DisplayName>APBC-125 - Armor Piercing Ballistic Cap 125mm Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\APBC_ArmorPiercingBallisticCap_300mm_Shell.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>0.125</X>
+                <Y>0.6</Y>
+                <Z>0.125</Z>
+            </Size>
+            <Mass>25</Mass>
+            <Volume>22</Volume>
+            <Model>Models\Ammo\APBC_ArmorPiercingBallisticCap_125mm_Shell.mwm</Model>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>HESH_125MM_Shell</SubtypeId>
+            </Id>
+            <DisplayName>HESH-125 - High Explosive Squashed Head 125mm Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\HESH_HighExplosiveSquashedHead_125mm_Shell.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>0.125</X>
+                <Y>0.6</Y>
+                <Z>0.125</Z>
+            </Size>
+            <Mass>13</Mass>
+            <Volume>22</Volume>
+            <Model>Models\Ammo\HESH_HighExplosiveSquashedHead_125mm_Shell.mwm</Model>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+		<AmmoMagazine>
+			<Id>
+				<TypeId>AmmoMagazine</TypeId>
+				<SubtypeId>EMC_125MM_Shell</SubtypeId>
+			</Id>
+			<DisplayName>EMC-125 - Electro-Magnetic Cap 125mm Shell</DisplayName>
+			<Icon>Textures\GUI\Icons\Ammo\EMP_125mmShell.dds</Icon>
+			<IsExplosive>true</IsExplosive>
+			<Size>
+				<X>0.125</X>
+				<Y>0.6</Y>
+				<Z>0.125</Z>
+			</Size>
+			<Mass>13</Mass>
+			<Volume>22</Volume>
+			<Model>Models\Ammo\EMP_125mmShell.mwm</Model>
+			<Capacity>1</Capacity>
+			<AmmoDefinitionId Subtype="Blank" />
+			<CanPlayerOrder>true</CanPlayerOrder>
+		</AmmoMagazine>
+
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>40x127_VULCAN</SubtypeId>
+            </Id>
+            <DisplayName>CJHV-40x127mm Standard Rounds</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\40X127mm_VULCAN_Standard.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.20</Y>
+                <Z>0.20</Z>
+            </Size>
+            <Mass>25</Mass>
+            <Volume>16</Volume>
+            <Model>Models\Weapons\Ammo_Box.mwm</Model>
+            <Capacity>1200</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>40x127_VULCAN_DUR</SubtypeId>
+            </Id>
+            <DisplayName>CJHV-40x127mm Depleted Uranium Rounds</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\40X127mm_VULCAN_DUR.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>0.20</Y>
+                <Z>0.20</Z>
+            </Size>
+            <Mass>25</Mass>
+            <Volume>16</Volume>
+            <Model>Models\Weapons\Ammo_Box.mwm</Model>
+            <Capacity>1200</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>MARLIN_57_HESH</SubtypeId>
+            </Id>
+            <DisplayName>57x438mm HESH Ammo Clip</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\MARLIN_57x438_HighExplosiveClip.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>0.125</X>
+                <Y>0.6</Y>
+                <Z>0.125</Z>
+            </Size>
+            <Mass>25</Mass>
+            <Volume>22</Volume>
+            <Model>Models\Ammo\MARLIN_57x438_HighExplosiveClip.mwm</Model>
+            <Capacity>16</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>CHURCHHILL_Type25</SubtypeId>
+            </Id>
+            <DisplayName>TYPE-25 - Standard 25x131mm CHURCHHILL Ammo Box</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\Type25_CHURCHHILL_25x131_AmmoBox.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>0.125</X>
+                <Y>0.6</Y>
+                <Z>0.125</Z>
+            </Size>
+            <Mass>34</Mass>
+            <Volume>26</Volume>
+            <Model>Models\Ammo\TYPE25_25x131_CHURCHHILL.mwm</Model>
+            <Capacity>84</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+        </AmmoMagazine>
+        
+        <!-- || GOLIATH 370mm STATIC CANNON || -->
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>APBC_370_GOLIATH</SubtypeId>
+            </Id>
+            <DisplayName>APBC-370 - 370x1160mm Armor Piercing Ballistic Cap Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\APBC370_GOLIATH_Shell.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>0.370</X>
+                <Y>1.160</Y>
+                <Z>0.370</Z>
+            </Size>
+            <Mass>98</Mass>
+            <Volume>52</Volume>
+            <Model>Models\Ammo\APBC370_GOLIATH_Shell.mwm</Model>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>APDU_370_GOLIATH</SubtypeId>
+            </Id>
+            <DisplayName>APDU-370 - 370x1160mm Armor Piercing Depleted Uranium Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\APDU370_GOLIATH_Shell.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>0.370</X>
+                <Y>1.160</Y>
+                <Z>0.370</Z>
+            </Size>
+            <Mass>98</Mass>
+            <Volume>52</Volume>
+            <Model>Models\Ammo\APDU370_GOLIATH_Shell.mwm</Model>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>HESH_370_GOLIATH</SubtypeId>
+            </Id>
+            <DisplayName>HESH-370 - 370x1160mm High Explosive Squashed Head Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\HESH370_GOLIATH_Shell.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>0.370</X>
+                <Y>1.160</Y>
+                <Z>0.370</Z>
+            </Size>
+            <Mass>98</Mass>
+            <Volume>52</Volume>
+            <Model>Models\Ammo\HESH370_GOLIATH_Shell.mwm</Model>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <!-- || HORNET Swarming Missile System ||-->
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>HORNET_80x652_Standard</SubtypeId>
+            </Id>
+            <DisplayName>HORNET 80x652mm Standard</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\HORNET_80x652mm_Standard.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>1.2</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size> 
+            <Mass>98</Mass>
+            <Volume>52</Volume>
+            <Model>Models\Ammo\HORNET_80x652mm_Standard.mwm</Model>
+            <Capacity>13</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>APPC_500</SubtypeId>
+            </Id>
+            <DisplayName>APPC-500 - Armor Piercing Pin Capped 500mm Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\APPC_500mmShell.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>0.500</X>
+                <Y>2.500</Y>
+                <Z>0.500</Z>
+            </Size>
+            <Mass>678</Mass>
+            <Volume>52</Volume>
+            <Model>Models\Ammo\APPC_500mmShell.mwm</Model>
+            <Capacity>3</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>NuPC_500</SubtypeId>
+            </Id>
+            <DisplayName>NuPC-500 - Nuclear Pin Cap 500mm Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\NuPC_500mmShell.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>1.2</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size> 
+            <Mass>98</Mass>
+            <Volume>52</Volume>
+            <Model>Models\Ammo\NuPC_500mmShell.mwm</Model>
+            <Capacity>3</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+
+		<AmmoMagazine>
+			<Id>
+				<TypeId>AmmoMagazine</TypeId>
+				<SubtypeId>EMC_500</SubtypeId>
+			</Id>
+			<DisplayName>EMC-500 - Electro-Magnetic Cap 500mm Shell</DisplayName>
+			<Icon>Textures\GUI\Icons\Ammo\EMP_500mmShell.dds</Icon>
+			<IsExplosive>true</IsExplosive>
+			<Size>
+				<X>0.125</X>
+				<Y>0.6</Y>
+				<Z>0.125</Z>
+			</Size>
+			<Mass>13</Mass>
+			<Volume>22</Volume>
+			<Model>Models\Ammo\EMP_500mmShell.mwm</Model>
+			<Capacity>1</Capacity>
+			<AmmoDefinitionId Subtype="Blank" />
+			<CanPlayerOrder>true</CanPlayerOrder>
+		</AmmoMagazine>
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>HESH_500</SubtypeId>
+            </Id>
+            <DisplayName>HESH-500 - High Explosive Squash Head 500mm Shell</DisplayName>
+            <Icon>Textures\GUI\Icons\Ammo\HESH_500mmShell.dds</Icon>
+            <IsExplosive>true</IsExplosive>
+            <Size>
+                <X>1.2</X>
+                <Y>0.2</Y>
+                <Z>0.2</Z>
+            </Size> 
+            <Mass>98</Mass>
+            <Volume>52</Volume>
+            <Model>Models\Ammo\HESH_500mmShell.mwm</Model>
+            <Capacity>3</Capacity>
+            <AmmoDefinitionId Subtype="Blank" />
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+    </AmmoMagazines>
+
+	<Ammos>
+		<Ammo xsi:type="MyObjectBuilder_ProjectileAmmoDefinition">
+			<Id>
+				<TypeId>AmmoDefinition</TypeId>
+				<SubtypeId>Blank</SubtypeId>
+			</Id>
+			<BasicProperties>
+				<DesiredSpeed>0</DesiredSpeed>
+				<SpeedVariance>0</SpeedVariance>
+				<MaxTrajectory>0</MaxTrajectory>
+				<BackkickForce>0</BackkickForce>
+			</BasicProperties>
+			<ProjectileProperties>
+				<ProjectileHitImpulse>0</ProjectileHitImpulse>
+				<ProjectileMassDamage>0</ProjectileMassDamage>
+				<ProjectileHealthDamage>0</ProjectileHealthDamage>
+				<ProjectileMaterial></ProjectileMaterial>
+				<ProjectileTrailScale>0</ProjectileTrailScale>
+				<ProjectileTrailProbability>0</ProjectileTrailProbability>
+			</ProjectileProperties>
+		</Ammo>
+	</Ammos>
+</Definitions>
